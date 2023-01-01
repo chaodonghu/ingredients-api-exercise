@@ -42,6 +42,7 @@ router.get("/search", async (req, res) => {
   console.log("search ingredients", term, page);
 
   let whereClause = "";
+  // our page will be the first param
   const params = [page * 5];
 
   if (term) {
